@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mon Application Vue.js</title>
+</head>
+<body>
+    <div id="app">
+        <h1>Ma premiere application Vue.js !</h1>
+        <p>J'ai hate de creer des applications incroyables !</p>
+    </div>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script>
+        /* Creation d'une nouvelle instance de Vue */
+        const app = new Vue({
+            /* configurer notre instance de Vue en lui transmettant un objet contenant notre première configuration : l'emplacement de la page sur laquelle Vue est installé. */
+            el: '#app', /* RQ: Les elements <html> et <body> ne peuvent pas etre selectionne */
+            /* Stocker les donnees avec la propriete data = [Object] */
+            data:{
+                message: 'Hello Vue.js',
+            }
+        })
+
+
+    </script>
+</body>
+</html>
